@@ -35,7 +35,7 @@
             { title: "APT", artist: "로제(ROSE), Bruno Mars", releaseDate: { start: "2024-10-21", end: "2024-11-24" } },
             { title: "HOME SWEET HOME (feat. 태양, 대성)", artist: "G-DRADON", releaseDate: { start: "2024-11-25", end: "2025-02-09" } },
             { title: "REBEL HEART", artist: "IVE(아이브)", releaseDate: { start: "2025-02-10", end: "2025-02-23" } },
-            { title: "TOO BAD", artist: "G-DRAGON", releaseDate: { start: "2025-02-24", end: "2025-03-06" } },
+            { title: "TOO BAD", artist: "G-DRAGON", releaseDate: { start: "2025-02-24", end: "2025-03-13" } },
         ];
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -68,38 +68,6 @@
                 }
             });
         });
-        // document.addEventListener('DOMContentLoaded', async () => {
-        //     const dateInput = document.getElementById('date-input');
-        //     dateInput.addEventListener('change', async () => {
-        //         const inputDate = dateInput.value;
-        //         try {
-        //             const response = await fetch('http://localhost:3000/fetch-songs');
-        //             const songs = await response.json();
-        //             const songsList = document.getElementById('songs-list');
-        //             songsList.innerHTML = '';
-
-        //             const filteredSongs = songs.filter(song => {
-        //                 const songDate = new Date(song.releaseDate);
-        //                 const inputDateObj = new Date(inputDate);
-        //                 return songDate.getFullYear() === inputDateObj.getFullYear() &&
-        //                        songDate.getMonth() === inputDateObj.getMonth() &&
-        //                        songDate.getDate() === inputDateObj.getDate();
-        //             });
-
-        //             if (filteredSongs.length > 0) {
-        //                 filteredSongs.forEach(song => {
-        //                     const listItem = document.createElement('li');
-        //                     listItem.textContent = `${song.title} (${song.releaseDate})`;
-        //                     songsList.appendChild(listItem);
-        //                 });
-        //             } else {
-        //                 songsList.innerHTML = '<li>해당 날짜에 출시된 노래가 없습니다.</li>';
-        //             }
-        //         } catch (error) {
-        //             console.error('Error fetching songs:', error);
-        //         }
-        //     });
-        // });
     </script>
 </body>
-</html>
+</html> 
