@@ -5,14 +5,12 @@ import { AddSong } from "./pages/AddSong";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="min-h-screen bg-gray-50">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/add" element={<AddSong />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div className="min-h-screen bg-gray-50">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/add" element={<AddSong />} />
+      </Routes>
+    </div>
   );
 };
 

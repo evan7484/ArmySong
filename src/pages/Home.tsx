@@ -1,6 +1,7 @@
 import React from "react";
 import { SongCard } from "../components/SongCard";
 import { useSongs } from "../hooks/useSongs";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const { songs, loading } = useSongs();
@@ -19,6 +20,9 @@ export const Home = () => {
           ))}
         </div>
       )}
+      <Link to="/add" className="text-blue-500 underline">
+        입대곡 등록하러 가기 →
+      </Link>
     </div>
   );
 };
